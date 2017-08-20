@@ -138,7 +138,7 @@ const asyncContainer = Typeahead => {
 
       this.setState({query});
 
-      if (!query || (minLength && query.length < minLength)) {
+      if (minLength && query.length < minLength) {
         return;
       }
 
